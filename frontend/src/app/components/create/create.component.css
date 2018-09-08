@@ -1,0 +1,16 @@
+.issue-form {
+  min-width: 80px;
+  widows: 50px;
+}
+.field-full-width{
+ width: 100%;
+}
+
+.message {
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  color: red;
+  
+}
+

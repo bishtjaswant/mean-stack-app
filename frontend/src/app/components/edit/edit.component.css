@@ -1,0 +1,20 @@
+.update-form{
+  min-width: 150px;
+  width: 100%;
+}
+
+.field-full-width{
+
+  width: 100%;
+}
+
+
+
+.message {
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  color: red;
+
+}
+

@@ -1,0 +1,35 @@
+<div>
+<br>
+<mat-card>
+  <div class="message" > {{message}} </div>
+
+  <section class="mat-typography">
+     <h2> create new issue</h2>
+    <mat-divider> </mat-divider>
+    <form [formGroup]="issueForm" class="issue-form" (ngSubmit)="addIssue()" method="post">
+    <mat-form-field class="field-full-width">
+      <input formControlName="issue" placeholder="enter issue" matInput id="">
+    </mat-form-field>
+    <mat-form-field class="field-full-width">
+      <input formControlName="responsible" placeholder="enter responsible"   matInput id="">
+    </mat-form-field>
+    <mat-form-field class="field-full-width">
+      <textarea formControlName="descriptions" style="resize:none;" placeholder="enter descriptions" matInput id="" > </textarea>
+    </mat-form-field>
+
+    <mat-form-field class="field-full-width">
+      <mat-select formControlName="severity" placeholder="choose severity" matInput id="">
+        <mat-option value="low"> Low</mat-option>
+        <mat-option value="medium"> Medium</mat-option>
+        <mat-option value="high"> High</mat-option>
+        <mat-option value="pending"> Pending </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-divider> </mat-divider>
+    <br>
+    <button type="button" mat-raised-button color="accent" routerLink="/list"> Go back </button>
+    <button type="submit"  mat-raised-button color="primary"  > Send issue </button>
+    </form>
+  </section>
+</mat-card>
+</div>
